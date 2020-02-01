@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <collectionViewItem id="aPy-pt-cJk">
+            <connections>
+                <outlet property="textField" destination="vYs-bs-PPF" id="uwF-VH-GA3"/>
+                <outlet property="view" destination="frA-yj-Rwi" id="bMN-H4-V6W"/>
+            </connections>
+        </collectionViewItem>
+        <customView id="frA-yj-Rwi">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vYs-bs-PPF">
+                    <rect key="frame" x="18" y="8" width="323" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="IndexPath" id="XHF-am-s4R">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vYs-bs-PPF" secondAttribute="trailing" id="Qrj-Sv-Vw1"/>
+                <constraint firstItem="vYs-bs-PPF" firstAttribute="centerY" secondItem="frA-yj-Rwi" secondAttribute="centerY" id="nhO-pQ-Egj"/>
+                <constraint firstItem="vYs-bs-PPF" firstAttribute="leading" secondItem="frA-yj-Rwi" secondAttribute="leading" constant="20" symbolic="YES" id="ujF-XF-3aQ"/>
+            </constraints>
+            <point key="canvasLocation" x="112.5" y="-83"/>
+        </customView>
+    </objects>
+</document>
